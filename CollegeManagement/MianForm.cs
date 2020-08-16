@@ -107,5 +107,10 @@ namespace CollegeManagement
         {
             ActivateButton(sender, RGBColors.color1);
         }
+
+        private void iconBtnSub_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
