@@ -1,4 +1,6 @@
-﻿using CollegeManagement.Student;
+﻿using CollegeManagement.Location;
+using CollegeManagement.Statistics;
+using CollegeManagement.Student;
 using CollegeManagement.Tags;
 using FontAwesome.Sharp;
 using System;
@@ -42,6 +44,7 @@ namespace CollegeManagement
                 currentButton.IconColor = color;
                // currentButton.TextImageRelation = TextImageRelation.TextBeforeImage;
                 currentButton.ImageAlign = ContentAlignment.MiddleRight;
+              
             }            
         }
 
@@ -106,6 +109,17 @@ namespace CollegeManagement
         private void icnBtnStat_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            openChildForm(new LocationMain());
+            lblTitle.Text = "Location Management";
         }
+
+        private void icnBtnSatistics_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            openChildForm(new StatisticMangement());
+            lblTitle.Text = "Statistics Management";
+        }
+
+        
     }
 }

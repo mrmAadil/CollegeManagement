@@ -48,6 +48,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Location\AddBuilding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\AddBuilding.Designer.cs">
+      <DependentUpon>AddBuilding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\AddRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\AddRoom.Designer.cs">
+      <DependentUpon>AddRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\LocationMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\LocationMain.Designer.cs">
+      <DependentUpon>LocationMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\ViewBuilding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\ViewBuilding.Designer.cs">
+      <DependentUpon>ViewBuilding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\ViewRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\ViewRoom.Designer.cs">
+      <DependentUpon>ViewRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="MianForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +86,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Statistics\StatisticMangement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics\StatisticMangement.Designer.cs">
+      <DependentUpon>StatisticMangement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student\Group.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +128,21 @@
     <Compile Include="Tags\TagManagement.Designer.cs">
       <DependentUpon>TagManagement.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Location\AddBuilding.resx">
+      <DependentUpon>AddBuilding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\AddRoom.resx">
+      <DependentUpon>AddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\LocationMain.resx">
+      <DependentUpon>LocationMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\ViewBuilding.resx">
+      <DependentUpon>ViewBuilding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\ViewRoom.resx">
+      <DependentUpon>ViewRoom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MianForm.resx">
       <DependentUpon>MianForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +155,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Statistics\StatisticMangement.resx">
+      <DependentUpon>StatisticMangement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Student\Group.resx">
       <DependentUpon>Group.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,5 +190,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

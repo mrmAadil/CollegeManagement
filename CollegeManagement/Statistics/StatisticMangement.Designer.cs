@@ -1,6 +1,6 @@
-﻿namespace CollegeManagement.Student
+﻿namespace CollegeManagement.Statistics
 {
-    partial class Group
+    partial class StatisticMangement
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // Group
+            // StatisticMangement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Group";
-            this.Text = "Group";
+            this.ClientSize = new System.Drawing.Size(1160, 642);
+            this.Name = "StatisticMangement";
+            this.Text = "StatisticMangement";
             this.ResumeLayout(false);
 
         }
