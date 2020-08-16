@@ -1,4 +1,5 @@
-﻿using CollegeManagement.Student;
+﻿using CollegeManagement.Lecturer;
+using CollegeManagement.Student;
 using CollegeManagement.Tags;
 using FontAwesome.Sharp;
 using System;
@@ -82,6 +83,8 @@ namespace CollegeManagement
         private void icnBtnLec_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            openChildForm(new LectureMain());
+            lblTitle.Text = "Lecturer Management";
         }
 
         private void icnBtnStudent_Click(object sender, EventArgs e)

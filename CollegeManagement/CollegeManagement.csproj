@@ -65,6 +65,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lecturer\AddLecturers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lecturer\AddLecturers.Designer.cs">
+      <DependentUpon>AddLecturers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lecturer\LectureMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lecturer\LectureMain.Designer.cs">
+      <DependentUpon>LectureMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="MianForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +121,12 @@
     <Compile Include="Tags\TagManagement.Designer.cs">
       <DependentUpon>TagManagement.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Lecturer\AddLecturers.resx">
+      <DependentUpon>AddLecturers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lecturer\LectureMain.resx">
+      <DependentUpon>LectureMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MianForm.resx">
       <DependentUpon>MianForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +184,9 @@
       <Project>{f4da7a8f-b048-4a2a-997a-de4e877228a4}</Project>
       <Name>CollegeCore</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Subject\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
