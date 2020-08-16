@@ -16,7 +16,7 @@ namespace CollegeManagement.Student
     {
        
         StudentCore objStudCore = new StudentCore();
-        StudentModel objCurrentStd = new StudentModel();
+        YearSemModel objCurrentStd = new YearSemModel();
 
         public YearSem()
         {
@@ -44,7 +44,7 @@ namespace CollegeManagement.Student
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            StudentModel objStudent = new StudentModel();
+            YearSemModel objStudent = new YearSemModel();
             
 
             objStudent.Year = "Y"+txtYear.Text;
@@ -93,7 +93,7 @@ namespace CollegeManagement.Student
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            StudentModel objStudent = new StudentModel();
+            YearSemModel objStudent = new YearSemModel();
 
             objStudent.Year = "Y" + txtYear.Text;
             objStudent.Semester = "S" + txtSem.Text;
@@ -107,7 +107,7 @@ namespace CollegeManagement.Student
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            StudentModel objStudent = new StudentModel();
+            YearSemModel objStudent = new YearSemModel();
 
             objStudent.Year = "Y" + txtYear.Text;
             objStudent.Semester = "S" + txtSem.Text;
