@@ -35,7 +35,7 @@ namespace CollegeManagement.Student
                 //Button Settings
                 currentButton = (IconButton)SenderButton;
                 //currentButton.BackColor = Color.FromArgb(37, 36, 81);
-                currentButton.ForeColor = color;
+                currentButton.ForeColor = Color.Black;
                 currentButton.TextAlign = ContentAlignment.MiddleCenter;
                 //currentButton.IconColor = color;
                 //currentButton.TextImageRelation = TextImageRelation.TextBeforeImage;
@@ -48,7 +48,7 @@ namespace CollegeManagement.Student
             if (currentButton != null)
             {
                 //currentButton.BackColor = Color.FromArgb(31, 30, 68);
-                currentButton.ForeColor = Color.Black;
+                currentButton.ForeColor = Color.White;
                 currentButton.TextAlign = ContentAlignment.MiddleLeft;
                 //currentButton.IconColor = Color.Gainsboro; ;
                 //currentButton.TextImageRelation = TextImageRelation.TextBeforeImage;
