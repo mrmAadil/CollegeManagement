@@ -48,7 +48,9 @@
   <ItemGroup>
     <Compile Include="DBConnection.cs" />
     <Compile Include="Infrastructure\StudentCore.cs" />
+    <Compile Include="Infrastructure\TagController.cs" />
     <Compile Include="Model\StudentModel.cs" />
+    <Compile Include="Model\TagModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
