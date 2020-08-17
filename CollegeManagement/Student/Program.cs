@@ -88,17 +88,21 @@ namespace CollegeManagement.Student
         {
             gvProgram.DataSource = objStudCore.getProgram();
 
-            gvProgram.RowsDefaultCellStyle.BackColor = Color.Bisque;
-            gvProgram.AlternatingRowsDefaultCellStyle.BackColor = Color.Beige;
-            gvProgram.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            gvProgram.RowsDefaultCellStyle.BackColor = Color.LightGray;
+            gvProgram.AlternatingRowsDefaultCellStyle.BackColor = Color.CornflowerBlue;
+            gvProgram.CellBorderStyle = DataGridViewCellBorderStyle.RaisedHorizontal;
 
-            gvProgram.DefaultCellStyle.SelectionBackColor = Color.Red;
-            gvProgram.DefaultCellStyle.SelectionForeColor = Color.Yellow;
+            //gvProgram.DefaultCellStyle.SelectionBackColor = Color.Red;
+            //gvProgram.DefaultCellStyle.SelectionForeColor = Color.Yellow;
 
             gvProgram.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             gvProgram.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             gvProgram.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
             gvProgram.Columns[2].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+
+            gvProgram.Columns[0].Width = 100;
+            gvProgram.Columns[1].Width = 200;
+            gvProgram.Columns[2].Width = 300;
 
             gvProgram.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             gvProgram.AllowUserToResizeColumns = true;

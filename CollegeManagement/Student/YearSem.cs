@@ -64,16 +64,17 @@ namespace CollegeManagement.Student
         {
             gvYearSem.DataSource = objStudCore.getYearSem();
 
-            gvYearSem.RowsDefaultCellStyle.BackColor = Color.Bisque;
-            gvYearSem.AlternatingRowsDefaultCellStyle.BackColor = Color.Beige;
-            gvYearSem.CellBorderStyle = DataGridViewCellBorderStyle.None;
-
-            gvYearSem.DefaultCellStyle.SelectionBackColor = Color.Red;
-            gvYearSem.DefaultCellStyle.SelectionForeColor = Color.Yellow;
+            gvYearSem.RowsDefaultCellStyle.BackColor = Color.LightGray;
+            gvYearSem.AlternatingRowsDefaultCellStyle.BackColor = Color.CornflowerBlue;
+            gvYearSem.CellBorderStyle = DataGridViewCellBorderStyle.RaisedHorizontal;
 
             gvYearSem.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             gvYearSem.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             gvYearSem.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            gvYearSem.Columns[0].Width = 200;
+            gvYearSem.Columns[1].Width = 200;
+
 
             gvYearSem.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             gvYearSem.AllowUserToResizeColumns = false;

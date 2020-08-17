@@ -87,17 +87,21 @@ namespace CollegeManagement.Student
         {
             dataGridView1.DataSource = objCore.getSubGroup();
 
-            dataGridView1.RowsDefaultCellStyle.BackColor = Color.Bisque;
-            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.Beige;
-            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            dataGridView1.RowsDefaultCellStyle.BackColor = Color.LightGray;
+            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.CornflowerBlue;
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
 
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.Red;
-            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Yellow;
+            //dataGridView1.DefaultCellStyle.SelectionBackColor = Color.Red;
+            //dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Yellow;
 
             dataGridView1.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             dataGridView1.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.Columns[2].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            dataGridView1.Columns[0].Width = 200;
+            dataGridView1.Columns[1].Width = 200;
+            dataGridView1.Columns[2].Width = 200;
 
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.AllowUserToResizeColumns = true;
