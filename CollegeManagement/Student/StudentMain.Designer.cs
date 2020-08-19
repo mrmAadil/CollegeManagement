@@ -30,7 +30,6 @@
         {
             this.icnBtnYearSem = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.icnBtnSubGroup = new FontAwesome.Sharp.IconButton();
             this.icnBtnGroup = new FontAwesome.Sharp.IconButton();
             this.icnBtnProgram = new FontAwesome.Sharp.IconButton();
             this.panelStudentChild = new System.Windows.Forms.Panel();
@@ -59,8 +58,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel1.Controls.Add(this.icnBtnSubGroup);
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.icnBtnGroup);
             this.panel1.Controls.Add(this.icnBtnProgram);
             this.panel1.Controls.Add(this.icnBtnYearSem);
@@ -70,26 +68,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1128, 42);
             this.panel1.TabIndex = 2;
-            // 
-            // icnBtnSubGroup
-            // 
-            this.icnBtnSubGroup.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.icnBtnSubGroup.Dock = System.Windows.Forms.DockStyle.Left;
-            this.icnBtnSubGroup.FlatAppearance.BorderSize = 0;
-            this.icnBtnSubGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.icnBtnSubGroup.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.icnBtnSubGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.icnBtnSubGroup.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.icnBtnSubGroup.IconColor = System.Drawing.Color.Black;
-            this.icnBtnSubGroup.IconSize = 16;
-            this.icnBtnSubGroup.Location = new System.Drawing.Point(672, 0);
-            this.icnBtnSubGroup.Name = "icnBtnSubGroup";
-            this.icnBtnSubGroup.Rotation = 0D;
-            this.icnBtnSubGroup.Size = new System.Drawing.Size(233, 42);
-            this.icnBtnSubGroup.TabIndex = 3;
-            this.icnBtnSubGroup.Text = "Sub Group Management";
-            this.icnBtnSubGroup.UseVisualStyleBackColor = false;
-            this.icnBtnSubGroup.Click += new System.EventHandler(this.icnBtnSubGroup_Click);
             // 
             // icnBtnGroup
             // 
@@ -133,6 +111,7 @@
             // 
             // panelStudentChild
             // 
+            this.panelStudentChild.BackColor = System.Drawing.Color.White;
             this.panelStudentChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelStudentChild.Location = new System.Drawing.Point(0, 42);
             this.panelStudentChild.Name = "panelStudentChild";
@@ -160,7 +139,6 @@
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton icnBtnGroup;
         private FontAwesome.Sharp.IconButton icnBtnProgram;
-        private FontAwesome.Sharp.IconButton icnBtnSubGroup;
         private System.Windows.Forms.Panel panelStudentChild;
     }
 }

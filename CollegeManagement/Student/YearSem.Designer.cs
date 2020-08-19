@@ -136,11 +136,13 @@
             this.gvYearSem.Location = new System.Drawing.Point(197, 300);
             this.gvYearSem.Name = "gvYearSem";
             this.gvYearSem.ReadOnly = true;
+            this.gvYearSem.RowHeadersWidth = 51;
             this.gvYearSem.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.gvYearSem.RowTemplate.Height = 24;
             this.gvYearSem.Size = new System.Drawing.Size(386, 214);
             this.gvYearSem.TabIndex = 7;
             this.gvYearSem.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvYearSem_CellClick);
+            this.gvYearSem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvYearSem_CellContentClick);
             // 
             // btnDelete
             // 
@@ -165,7 +167,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(860, 564);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.gvYearSem);

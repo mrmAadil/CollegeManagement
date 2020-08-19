@@ -8,65 +8,13 @@ using System.Threading.Tasks;
 
 namespace CollegeCore.Infrastructure
 {
-    public class StudentCore
+    public class BuildingCore
     {
-        public void insertYearSem(StudentModel objstudent)
+        public void insertBuildingDetails(BuildingModel objbuilding)
         {
             try
             {
-                string Query = "Insert into college_db.year_sem(year,semester) values('" + objstudent.Year + "','" + objstudent.Semester + "')";
-                MySqlConnection con = new MySqlConnection(DBConnection.ConnectionString);
-
-                MySqlCommand cmd = new MySqlCommand(Query, con);
-                MySqlDataReader myReader;
-                con.Open();
-                myReader = cmd.ExecuteReader();
-
-                while (myReader.Read())
-                {
-                }
-                con.Close();
-
-            }catch(Exception ex)
-            {
-
-            }
-        }
-
-        public List<StudentModel> getYearSem()
-        {
-            List<StudentModel> listStudent = new List<StudentModel>();
-            try
-            {
-                string Query = "Select year,semester from college_db.year_sem";
-                MySqlConnection con = new MySqlConnection(DBConnection.ConnectionString);
-
-                MySqlCommand cmd = new MySqlCommand(Query, con);
-                MySqlDataReader myReader;
-                con.Open();
-                myReader = cmd.ExecuteReader();
-
-                while (myReader.Read())
-                {
-                    StudentModel objStudent = new StudentModel();
-                    objStudent.Year = myReader["year"].ToString();
-                    objStudent.Semester = myReader["semester"].ToString();
-                    listStudent.Add(objStudent);
-                }
-            }
-            catch (Exception ex)
-            {
-
-            }
-
-            return listStudent;
-        }
-
-        public void updateYearSem(StudentModel objstudent,StudentModel objPrevStd)
-        {
-            try
-            {
-                string Query = "Update college_db.year_sem SET year = '"+objstudent.Year+"' , semester = '"+objstudent.Semester+ "' where year = '" + objPrevStd.Year + "' and semester = '"+objPrevStd.Semester+"'";
+                string Query = "Insert into college_db.buildings(Building_Name,Block_Floor_Name,No_of_Rooms) values('" + objbuilding.Building_Name + "','" + objbuilding.Block_Floor_Name + "','" + objbuilding.No_of_Rooms + "')";
                 MySqlConnection con = new MySqlConnection(DBConnection.ConnectionString);
 
                 MySqlCommand cmd = new MySqlCommand(Query, con);
@@ -82,15 +30,46 @@ namespace CollegeCore.Infrastructure
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine(ex);
             }
         }
 
-        public void deleteYearSem(StudentModel objStudent) 
+        public List<BuildingModel> getBuildingDetails()
+        {
+            List<BuildingModel> listBuildings = new List<BuildingModel>();
+            try
+            {
+                string Query = "Select Building_Name,Block_Floor_Name, No_of_Rooms from college_db.buildings";
+                MySqlConnection con = new MySqlConnection(DBConnection.ConnectionString);
+
+                MySqlCommand cmd = new MySqlCommand(Query, con);
+                MySqlDataReader myReader;
+                con.Open();
+                myReader = cmd.ExecuteReader();
+
+                while (myReader.Read())
+                {
+                    BuildingModel objModel = new BuildingModel();
+                    objModel.Building_Name = myReader["Building_Name"].ToString();
+                    objModel.Block_Floor_Name = myReader["Block_Floor_Name"].ToString();
+                    objModel.No_of_Rooms = Convert.ToInt32(myReader["No_of_Rooms"].ToString());
+                    listBuildings.Add(objModel);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+
+            return listBuildings;
+        }
+
+        public void updateBuildingDetails(BuildingModel objbuilding, BuildingModel objPrevbuilding)
         {
             try
             {
-                string Query = "Delete from college_db.year_sem where year = '"+objStudent.Year+"' and semester = '"+objStudent.Semester+"'";
+                string Query = "Update college_db.buildings SET building_name = '" + objbuilding.Building_Name + "' , Block_Floor_Name = '" + objbuilding.Block_Floor_Name + "', No_of_Rooms = '" + objbuilding.No_of_Rooms + "' where building_name = '" + objPrevbuilding.Building_Name + "' and Block_Floor_Name = '" + objPrevbuilding.Block_Floor_Name + "' and No_of_Rooms = '" + objPrevbuilding.No_of_Rooms + "'";
                 MySqlConnection con = new MySqlConnection(DBConnection.ConnectionString);
 
                 MySqlCommand cmd = new MySqlCommand(Query, con);
@@ -106,9 +85,32 @@ namespace CollegeCore.Infrastructure
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine(ex);
             }
         }
 
+        public void deleteBuildingDetails(BuildingModel objbuilding)
+        {
+            try
+            {
+                string Query = "Delete from college_db.buildings where building_name = '" + objbuilding.Building_Name+ "' and Block_Floor_Name = '" + objbuilding.Block_Floor_Name + "'  and No_Of_Rooms = '" + objbuilding.No_of_Rooms + "'";
+                MySqlConnection con = new MySqlConnection(DBConnection.ConnectionString);
+
+                MySqlCommand cmd = new MySqlCommand(Query, con);
+                MySqlDataReader myReader;
+                con.Open();
+                myReader = cmd.ExecuteReader();
+
+                while (myReader.Read())
+                {
+                }
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
     }
 }

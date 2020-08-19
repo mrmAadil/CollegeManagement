@@ -51,9 +51,21 @@
     <Reference Include="FontAwesome.Sharp, Version=5.14.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.14.0\lib\net45\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,8 +75,36 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="data.cs">
+      <DependentUpon>data.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>data.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Location\AddBuilding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\AddBuilding.Designer.cs">
+      <DependentUpon>AddBuilding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\AddRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\AddRoom.Designer.cs">
+      <DependentUpon>AddRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\LocationMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\LocationMain.Designer.cs">
+      <DependentUpon>LocationMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="MianForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +113,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Statistics\LecStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics\LecStat.Designer.cs">
+      <DependentUpon>LecStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\StatisticMangement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics\StatisticMangement.Designer.cs">
+      <DependentUpon>StatisticMangement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\StudStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics\StudStat.Designer.cs">
+      <DependentUpon>StudStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\SubStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics\SubStat.Designer.cs">
+      <DependentUpon>SubStat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student\Group.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +173,15 @@
     <Compile Include="Tags\TagManagement.Designer.cs">
       <DependentUpon>TagManagement.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Location\AddBuilding.resx">
+      <DependentUpon>AddBuilding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\AddRoom.resx">
+      <DependentUpon>AddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\LocationMain.resx">
+      <DependentUpon>LocationMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MianForm.resx">
       <DependentUpon>MianForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +195,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Statistics\LecStat.resx">
+      <DependentUpon>LecStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\StatisticMangement.resx">
+      <DependentUpon>StatisticMangement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\StudStat.resx">
+      <DependentUpon>StudStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\SubStat.resx">
+      <DependentUpon>SubStat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Student\Group.resx">
       <DependentUpon>Group.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +225,17 @@
     <EmbeddedResource Include="Tags\TagManagement.resx">
       <DependentUpon>TagManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="data.xsc">
+      <DependentUpon>data.xsd</DependentUpon>
+    </None>
+    <None Include="data.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>data.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="data.xss">
+      <DependentUpon>data.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -155,15 +251,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\CollegeCore\CollegeCore.csproj">
-      <Project>{f4da7a8f-b048-4a2a-997a-de4e877228a4}</Project>
+      <Project>{F4DA7A8F-B048-4A2A-997A-DE4E877228A4}</Project>
       <Name>CollegeCore</Name>
     </ProjectReference>
   </ItemGroup>
