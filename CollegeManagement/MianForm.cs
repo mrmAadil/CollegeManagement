@@ -120,6 +120,11 @@ namespace CollegeManagement
             lblTitle.Text = "Statistics Management";
         }
 
+        private void iconBtnSub_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void iconPictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();

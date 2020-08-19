@@ -51,10 +51,12 @@
     <Compile Include="Infrastructure\RoomCore.cs" />
     <Compile Include="Infrastructure\StatisticsCore.cs" />
     <Compile Include="Infrastructure\StudentCore.cs" />
+    <Compile Include="Infrastructure\TagController.cs" />
     <Compile Include="Model\BuildingModel.cs" />
     <Compile Include="Model\RoomModel.cs" />
     <Compile Include="Model\StatisticsModel.cs" />
     <Compile Include="Model\StudentModel.cs" />
+    <Compile Include="Model\TagModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

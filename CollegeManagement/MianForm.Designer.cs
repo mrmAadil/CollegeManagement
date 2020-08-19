@@ -30,6 +30,8 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.pannelTitle = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.pannelTitle = new System.Windows.Forms.Panel();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pannelChild = new System.Windows.Forms.Panel();
@@ -39,24 +41,27 @@
             this.icnBtnTags = new FontAwesome.Sharp.IconButton();
             this.icnBtnWrk = new FontAwesome.Sharp.IconButton();
             this.icnBtnStudent = new FontAwesome.Sharp.IconButton();
+            this.iconBtnSub = new FontAwesome.Sharp.IconButton();
             this.icnBtnLec = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.pannelTitle.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.pannelTitle);
             this.panel1.Controls.Add(this.pannelChild);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1396, 749);
+            this.panel1.Size = new System.Drawing.Size(1396, 750);
             this.panel1.TabIndex = 0;
             // 
             // pannelTitle
@@ -100,8 +105,9 @@
             this.pannelChild.AutoSize = true;
             this.pannelChild.BackColor = System.Drawing.Color.White;
             this.pannelChild.Location = new System.Drawing.Point(215, 57);
+            this.pannelChild.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pannelChild.Name = "pannelChild";
-            this.pannelChild.Size = new System.Drawing.Size(1178, 689);
+            this.pannelChild.Size = new System.Drawing.Size(1179, 689);
             this.pannelChild.TabIndex = 1;
             // 
             // panel2
@@ -112,14 +118,17 @@
             this.panel2.Controls.Add(this.icnBtnTags);
             this.panel2.Controls.Add(this.icnBtnWrk);
             this.panel2.Controls.Add(this.icnBtnStudent);
+            this.panel2.Controls.Add(this.iconBtnSub);
             this.panel2.Controls.Add(this.icnBtnLec);
             this.panel2.Controls.Add(this.iconButton1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(3, 100, 3, 10);
             this.panel2.Size = new System.Drawing.Size(215, 749);
+            this.panel2.Size = new System.Drawing.Size(215, 750);
             this.panel2.TabIndex = 0;
             // 
             // icnBtnSatistics
@@ -176,6 +185,8 @@
             this.icnBtnTags.IconColor = System.Drawing.Color.White;
             this.icnBtnTags.IconSize = 32;
             this.icnBtnTags.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.icnBtnTags.Location = new System.Drawing.Point(0, 285);
+            this.icnBtnTags.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.icnBtnTags.Location = new System.Drawing.Point(3, 328);
             this.icnBtnTags.Name = "icnBtnTags";
             this.icnBtnTags.Rotation = 0D;
@@ -198,6 +209,8 @@
             this.icnBtnWrk.IconSize = 32;
             this.icnBtnWrk.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.icnBtnWrk.Location = new System.Drawing.Point(3, 271);
+            this.icnBtnWrk.Location = new System.Drawing.Point(0, 228);
+            this.icnBtnWrk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.icnBtnWrk.Name = "icnBtnWrk";
             this.icnBtnWrk.Rotation = 0D;
             this.icnBtnWrk.Size = new System.Drawing.Size(209, 57);
@@ -219,6 +232,8 @@
             this.icnBtnStudent.IconSize = 32;
             this.icnBtnStudent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.icnBtnStudent.Location = new System.Drawing.Point(3, 214);
+            this.icnBtnStudent.Location = new System.Drawing.Point(0, 171);
+            this.icnBtnStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.icnBtnStudent.Name = "icnBtnStudent";
             this.icnBtnStudent.Rotation = 0D;
             this.icnBtnStudent.Size = new System.Drawing.Size(209, 57);
@@ -226,6 +241,27 @@
             this.icnBtnStudent.Text = "Students";
             this.icnBtnStudent.UseVisualStyleBackColor = true;
             this.icnBtnStudent.Click += new System.EventHandler(this.icnBtnStudent_Click);
+            // 
+            // iconBtnSub
+            // 
+            this.iconBtnSub.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconBtnSub.FlatAppearance.BorderSize = 0;
+            this.iconBtnSub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconBtnSub.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconBtnSub.ForeColor = System.Drawing.SystemColors.Control;
+            this.iconBtnSub.IconChar = FontAwesome.Sharp.IconChar.Book;
+            this.iconBtnSub.IconColor = System.Drawing.Color.White;
+            this.iconBtnSub.IconSize = 32;
+            this.iconBtnSub.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconBtnSub.Location = new System.Drawing.Point(0, 114);
+            this.iconBtnSub.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconBtnSub.Name = "iconBtnSub";
+            this.iconBtnSub.Rotation = 0D;
+            this.iconBtnSub.Size = new System.Drawing.Size(215, 57);
+            this.iconBtnSub.TabIndex = 2;
+            this.iconBtnSub.Text = "Subjects";
+            this.iconBtnSub.UseVisualStyleBackColor = true;
+            this.iconBtnSub.Click += new System.EventHandler(this.iconBtnSub_Click);
             // 
             // icnBtnLec
             // 
@@ -235,16 +271,18 @@
             this.icnBtnLec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icnBtnLec.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.icnBtnLec.ForeColor = System.Drawing.SystemColors.Control;
-            this.icnBtnLec.IconChar = FontAwesome.Sharp.IconChar.Book;
+            this.icnBtnLec.IconChar = FontAwesome.Sharp.IconChar.UserCog;
             this.icnBtnLec.IconColor = System.Drawing.Color.White;
             this.icnBtnLec.IconSize = 32;
             this.icnBtnLec.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.icnBtnLec.Location = new System.Drawing.Point(3, 157);
+            this.icnBtnLec.Location = new System.Drawing.Point(0, 57);
+            this.icnBtnLec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.icnBtnLec.Name = "icnBtnLec";
             this.icnBtnLec.Rotation = 0D;
             this.icnBtnLec.Size = new System.Drawing.Size(209, 57);
             this.icnBtnLec.TabIndex = 1;
-            this.icnBtnLec.Text = "Lectures";
+            this.icnBtnLec.Text = "Lecturers";
             this.icnBtnLec.UseVisualStyleBackColor = true;
             this.icnBtnLec.Click += new System.EventHandler(this.icnBtnLec_Click);
             // 
@@ -261,6 +299,8 @@
             this.iconButton1.IconSize = 32;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.Location = new System.Drawing.Point(3, 100);
+            this.iconButton1.Location = new System.Drawing.Point(0, 0);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Rotation = 0D;
             this.iconButton1.Size = new System.Drawing.Size(209, 57);
@@ -273,15 +313,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1396, 749);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1396, 750);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MianForm";
             this.Text = "AddYearSemester";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pannelTitle.ResumeLayout(false);
             this.pannelTitle.PerformLayout();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -303,5 +346,6 @@
         private System.Windows.Forms.Label lblTitle;
         private FontAwesome.Sharp.IconButton icnBtnSatistics;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconButton iconBtnSub;
     }
 }
