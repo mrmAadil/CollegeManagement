@@ -71,6 +71,12 @@
     <Compile Include="Lecturer\AddLecturers.Designer.cs">
       <DependentUpon>AddLecturers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lecturer\AddSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lecturer\AddSession.Designer.cs">
+      <DependentUpon>AddSession.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lecturer\LectureMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </Compile>
     <EmbeddedResource Include="Lecturer\AddLecturers.resx">
       <DependentUpon>AddLecturers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lecturer\AddSession.resx">
+      <DependentUpon>AddSession.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lecturer\LectureMain.resx">
       <DependentUpon>LectureMain.cs</DependentUpon>

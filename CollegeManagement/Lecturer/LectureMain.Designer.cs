@@ -39,7 +39,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.icnBtnMngSes);
             this.panel1.Controls.Add(this.icnBtnSession);
             this.panel1.Controls.Add(this.icnBtnMngLec);
@@ -90,6 +90,7 @@
             this.icnBtnSession.TabIndex = 2;
             this.icnBtnSession.Text = "Add Session";
             this.icnBtnSession.UseVisualStyleBackColor = false;
+            this.icnBtnSession.Click += new System.EventHandler(this.icnBtnAddSession_Click);
             // 
             // icnBtnMngLec
             // 
@@ -134,6 +135,7 @@
             // 
             // panelLecturerChild
             // 
+            this.panelLecturerChild.BackColor = System.Drawing.Color.White;
             this.panelLecturerChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLecturerChild.Location = new System.Drawing.Point(0, 34);
             this.panelLecturerChild.Name = "panelLecturerChild";
