@@ -63,6 +63,21 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.0.1\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.0.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.0.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.0.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.0.1\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MianForm.cs">
@@ -109,6 +124,30 @@
     <Compile Include="Tags\TagManagement.Designer.cs">
       <DependentUpon>TagManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="WorkingDaysHours\MainWorkingDaysHours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingDaysHours\MainWorkingDaysHours.Designer.cs">
+      <DependentUpon>MainWorkingDaysHours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingDaysHours\TimeSlots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingDaysHours\TimeSlots.Designer.cs">
+      <DependentUpon>TimeSlots.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingDaysHours\WorkingDays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingDaysHours\WorkingDays.Designer.cs">
+      <DependentUpon>WorkingDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingDaysHours\WorkingHours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingDaysHours\WorkingHours.Designer.cs">
+      <DependentUpon>WorkingHours.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MianForm.resx">
       <DependentUpon>MianForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +179,18 @@
     <EmbeddedResource Include="Tags\TagManagement.resx">
       <DependentUpon>TagManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkingDaysHours\MainWorkingDaysHours.resx">
+      <DependentUpon>MainWorkingDaysHours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingDaysHours\TimeSlots.resx">
+      <DependentUpon>TimeSlots.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingDaysHours\WorkingDays.resx">
+      <DependentUpon>WorkingDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingDaysHours\WorkingHours.resx">
+      <DependentUpon>WorkingHours.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -167,5 +218,6 @@
       <Name>CollegeCore</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
