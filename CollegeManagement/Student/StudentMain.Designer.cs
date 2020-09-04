@@ -30,7 +30,6 @@
         {
             this.icnBtnYearSem = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.icnBtnSubGroup = new FontAwesome.Sharp.IconButton();
             this.icnBtnGroup = new FontAwesome.Sharp.IconButton();
             this.icnBtnProgram = new FontAwesome.Sharp.IconButton();
             this.panelStudentChild = new System.Windows.Forms.Panel();
@@ -62,6 +61,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.icnBtnSubGroup);
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.icnBtnGroup);
             this.panel1.Controls.Add(this.icnBtnProgram);
             this.panel1.Controls.Add(this.icnBtnYearSem);
@@ -165,7 +165,6 @@
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton icnBtnGroup;
         private FontAwesome.Sharp.IconButton icnBtnProgram;
-        private FontAwesome.Sharp.IconButton icnBtnSubGroup;
         private System.Windows.Forms.Panel panelStudentChild;
     }
 }

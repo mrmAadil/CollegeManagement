@@ -18,9 +18,15 @@ namespace CollegeCore.Infrastructure
             try
             {
                 string Query = "Insert into college_db.year_sem(year,semester) values('" + objstudent.Year + "','" + objstudent.Semester + "')";
+                
+                
                 MySqlConnection con = new MySqlConnection(DBConnection.ConnectionString);
 
+                
                 MySqlCommand cmd = new MySqlCommand(Query, con);
+
+                
+
                 MySqlDataReader myReader;
                 con.Open();
                 myReader = cmd.ExecuteReader();
@@ -59,7 +65,7 @@ namespace CollegeCore.Infrastructure
             }
             catch (Exception ex)
             {
-                
+
             }
 
             return listStudent;

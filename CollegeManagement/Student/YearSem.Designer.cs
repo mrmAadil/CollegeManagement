@@ -149,11 +149,13 @@
             this.gvYearSem.Location = new System.Drawing.Point(195, 300);
             this.gvYearSem.Name = "gvYearSem";
             this.gvYearSem.ReadOnly = true;
+            this.gvYearSem.RowHeadersWidth = 51;
             this.gvYearSem.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.gvYearSem.RowTemplate.Height = 24;
             this.gvYearSem.Size = new System.Drawing.Size(519, 214);
             this.gvYearSem.TabIndex = 7;
             this.gvYearSem.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvYearSem_CellClick);
+            this.gvYearSem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvYearSem_CellContentClick);
             // 
             // btnDelete
             // 
