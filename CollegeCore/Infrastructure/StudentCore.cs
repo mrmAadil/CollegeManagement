@@ -65,7 +65,7 @@ namespace CollegeCore.Infrastructure
             }
             catch (Exception ex)
             {
-                
+
             }
 
             return listStudent;

@@ -119,5 +119,10 @@ namespace CollegeManagement.Student
             txtYear.Text = "";
             txtSem.Text = "";
         }
+
+        private void gvYearSem_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
