@@ -81,5 +81,11 @@ namespace CollegeManagement.Lecturer
             ActivateButton(sender, RGBColors.color1);
             openChildForm(new AddLecturers());
         }
+
+        private void icnBtnAddSession_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            openChildForm(new AddSession());
+        }
     }
 }

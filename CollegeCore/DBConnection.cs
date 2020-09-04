@@ -9,6 +9,6 @@ namespace CollegeCore
 {
     public class DBConnection
     {
-        public static string ConnectionString = @"datasource=localhost;username=root;password=1234";
+        public static string ConnectionString = @"datasource=localhost;username=root;password=root";
     }
 }
