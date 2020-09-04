@@ -121,6 +121,24 @@
     <Compile Include="Student\YearSem.Designer.cs">
       <DependentUpon>YearSem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Subject\AddSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject\AddSubject.Designer.cs">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subject\ManageSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject\ManageSubject.Designer.cs">
+      <DependentUpon>ManageSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subject\SubjectMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject\SubjectMain.Designer.cs">
+      <DependentUpon>SubjectMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tags\TagManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +182,15 @@
     <EmbeddedResource Include="Student\YearSem.resx">
       <DependentUpon>YearSem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Subject\AddSubject.resx">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject\ManageSubject.resx">
+      <DependentUpon>ManageSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject\SubjectMain.resx">
+      <DependentUpon>SubjectMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tags\TagManagement.resx">
       <DependentUpon>TagManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,8 +221,6 @@
       <Name>CollegeCore</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Subject\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,7 @@
 ﻿using CollegeManagement.Lecturer;
 using CollegeManagement.Student;
 using CollegeManagement.Tags;
+using CollegeManagement.Subject;
 using FontAwesome.Sharp;
 using System;
 using System.Collections.Generic;
@@ -113,7 +114,9 @@ namespace CollegeManagement
 
         private void iconBtnSub_Click(object sender, EventArgs e)
         {
-
+            ActivateButton(sender, RGBColors.color1);
+            openChildForm(new SubjectMain());
+            lblTitle.Text = "Subject Management";
         }
     }
 }
