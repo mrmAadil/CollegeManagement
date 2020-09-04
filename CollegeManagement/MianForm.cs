@@ -1,6 +1,7 @@
 ﻿using CollegeManagement.Lecturer;
 using CollegeManagement.Student;
 using CollegeManagement.Tags;
+using CollegeManagement.WorkingDaysHours;
 using FontAwesome.Sharp;
 using System;
 using System.Collections.Generic;
@@ -97,6 +98,8 @@ namespace CollegeManagement
         private void icnBtnWrk_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            openChildForm(new MainWorkingDaysHours());
+            lblTitle.Text = "Working Days, Hours and Time-Slots Management";
         }
 
         private void icnBtnTags_Click(object sender, EventArgs e)
