@@ -60,7 +60,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.icnBtnSubGroup);
+           // this.panel1.Controls.Add(this.icnBtnSubGroup);
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.icnBtnGroup);
             this.panel1.Controls.Add(this.icnBtnProgram);
@@ -73,7 +73,7 @@
             this.panel1.TabIndex = 2;
             // 
             // icnBtnSubGroup
-            // 
+            /*// 
             this.icnBtnSubGroup.BackColor = System.Drawing.Color.CornflowerBlue;
             this.icnBtnSubGroup.Dock = System.Windows.Forms.DockStyle.Left;
             this.icnBtnSubGroup.FlatAppearance.BorderSize = 0;
@@ -92,7 +92,7 @@
             this.icnBtnSubGroup.Text = "Sub Group Management";
             this.icnBtnSubGroup.UseVisualStyleBackColor = false;
             this.icnBtnSubGroup.Click += new System.EventHandler(this.icnBtnSubGroup_Click);
-            // 
+            // */
             // icnBtnGroup
             // 
             this.icnBtnGroup.BackColor = System.Drawing.Color.CornflowerBlue;

@@ -88,7 +88,7 @@
             this.iconPictureBox1.Size = new System.Drawing.Size(43, 41);
             this.iconPictureBox1.TabIndex = 1;
             this.iconPictureBox1.TabStop = false;
-            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
+
             // 
             // lblTitle
             // 
@@ -150,7 +150,6 @@
             this.icnBtnSatistics.TabIndex = 6;
             this.icnBtnSatistics.Text = "Statistics";
             this.icnBtnSatistics.UseVisualStyleBackColor = true;
-            this.icnBtnSatistics.Click += new System.EventHandler(this.icnBtnSatistics_Click);
             // 
             // icnBtnLocation
             // 

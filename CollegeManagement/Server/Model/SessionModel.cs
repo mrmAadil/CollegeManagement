@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CollegeCore.Model
+namespace CollegeManagement.Model
 {
     class SessionModel
     {
